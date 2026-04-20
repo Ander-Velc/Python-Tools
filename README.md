@@ -7,9 +7,12 @@ I made this repo to upload python scripts that I made for practicing my programm
 This tool has helped me to better understand the relationship of the information packets transmitted between systems, I tried to copy the nmap style and features.
 Is slow and simple but it works...
 
-<img width="1044" height="432" alt="image" src="https://github.com/user-attachments/assets/4b0a265f-71dd-44b4-b9f2-ef4c729ab0ae" />
+<img width="2310" height="624" alt="image" src="https://github.com/user-attachments/assets/5d81e109-73a8-4bc3-8776-8a1e033c4ea0" />
 
-<img width="1406" height="444" alt="image" src="https://github.com/user-attachments/assets/ae1368b6-3d11-4c19-8e4b-38d3a75b0434" />
+Scan:
+
+<img width="2326" height="826" alt="image" src="https://github.com/user-attachments/assets/1cc90ef2-df04-48c7-b71b-45e2f4bad2d7" />
+
 
 ## ⚙️ Requirements
 Python 3.8+
