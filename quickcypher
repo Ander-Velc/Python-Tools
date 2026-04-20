@@ -1,0 +1,50 @@
+import sys
+import argparse
+from cryptography.fernet import Fernet
+
+def encrypt_text(text: str, key: str = None) -> None:
+    if not key:
+        key = Fernet.generate_key()
+    else:
+        key = key.encode()
+
+    fernet = Fernet(key)
+    encrypted = fernet.encrypt(text.encode())
+
+    print("\n[+] Encryption successful")
+    print(f"[!] Save this key securely: {key.decode()}")
+    print(f"[+] Encrypted text:\n{encrypted.decode()}")
+
+
+def decrypt_text(token: str, key: str) -> None:
+    try:
+        fernet = Fernet(key.encode())
+        decrypted = fernet.decrypt(token.encode())
+        print("\n[+] Decryption successful")
+        print(f"[+] Decrypted text:\n{decrypted.decode()}")
+    except Exception as e:
+        print(f"[!] Error decrypting data: {e}")
+        sys.exit(1)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="QuickCypher - Simple encryption/decryption tool using Fernet"
+    )
+
+    parser.add_argument("-t", "--text", help="Text to encrypt")
+    parser.add_argument("-d", "--decrypt", help="Encrypted text to decrypt")
+    parser.add_argument("-k", "--key", help="Encryption/Decryption key")
+
+    args = parser.parse_args()
+
+    if args.text:
+        encrypt_text(args.text, args.key)
+    elif args.decrypt and args.key:
+        decrypt_text(args.decrypt, args.key)
+    else:
+        parser.print_help()
+
+
+if __name__ == "__main__":
+    main()
