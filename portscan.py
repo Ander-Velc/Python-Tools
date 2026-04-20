@@ -269,13 +269,11 @@ def main():
     parser.add_argument("-p", "--ports", help="Range ex: 20-100")
     parser.add_argument("--open", action="store_true", help="Show only open ports")
     parser.add_argument("-p-", "--all-ports", action="store_true", help="Scan 1-65535") 
-
     args = parser.parse_args()
 
     ip = args.ip 
     scanBanner(ip)
 
-    # Determinar rango de puertos
     if args.all_ports:
         ports = range(1, 65536)
     elif args.ports:
@@ -284,18 +282,16 @@ def main():
     else:
         print("You must specify -p <ports> or -p- <all-ports>")
         return
-
-    print("PORT\tSTATE\tSERVICE")
-
+    print(f"{'PORT':<10}{'STATE':<10}{'SERVICE':<15}")
     for port in ports:
         service = get_service(port)
-
+        port_str = f"{port}/tcp"
         if args.open:
             if sS_scanner_openPorts(ip, port):
-                print(f"{port}/tcp\tOPEN\t{service}")
+                print(f"{port_str:<10}{'open':<10}{service:<15}")
         else:
-            state = sS_scanner(ip, port)
-            print(f"{port}/tcp\t{state}\t{service}") 
+            state = sS_scanner(ip, port).lower()
+            print(f"{port_str:<10}{state:<10}{service:<15}") 
 
     end_scanBanner()
 
