@@ -20,7 +20,7 @@ Python 3.8+
 
 Install:
 ```
-pip install scapy, argparse
+pip3 install scapy
 ```
 
 # quickcypher
