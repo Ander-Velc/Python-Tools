@@ -46,5 +46,5 @@ Python 3.8+
 
 Install:
 ```
-pip install cryptography
+pip3 install cryptography
 ```
