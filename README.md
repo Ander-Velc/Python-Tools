@@ -2,8 +2,7 @@
 
 <img width="712" height="729" alt="image" src="https://github.com/user-attachments/assets/124e9d0a-0e0b-4289-91d2-f5d101ed8d53" />
 
-
-
+## Purpose
 
 I made this repo to upload python scripts that I made for practicing my programming skills, perhaps someone else is also learning and can help.
 
