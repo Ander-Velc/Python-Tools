@@ -40,7 +40,7 @@ Scan:
 
 ## ⚙️ Requirements
 Python 3.8+
-`scapy, argparse`
+`scapy`
 
 Install:
 ```
