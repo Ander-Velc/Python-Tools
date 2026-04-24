@@ -1,6 +1,29 @@
 # Python-Tools
 
+<img width="712" height="729" alt="image" src="https://github.com/user-attachments/assets/124e9d0a-0e0b-4289-91d2-f5d101ed8d53" />
+
+
 I made this repo to upload python scripts that I made for practicing my programming skills, perhaps someone else is also learning and can help.
+
+# taurush.py
+
+ I've tried to make a fast hash cracker tool, it support most of the common hash algorithms and include threads. Be careful with RAM...
+
+<img width="1119" height="433" alt="image" src="https://github.com/user-attachments/assets/24f8fa64-1ee8-4cd1-83df-4d8366f678f0" />
+
+I've tried to use a 40.000 lines wordlist and this is the average speed:
+
+sha256:
+
+<img width="1916" height="776" alt="image" src="https://github.com/user-attachments/assets/c90da3b5-c1a9-47e0-b7ae-f243b8eb0d57" />
+
+md5:
+
+<img width="1916" height="775" alt="image" src="https://github.com/user-attachments/assets/3facd230-7019-4ca0-82c2-822c800b6d0a" />
+
+## ⚙️ Requirements
+
+Python 3.8+
 
 # portscan.py
 
