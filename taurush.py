@@ -56,7 +56,7 @@ def start_loader(text=f"Cracking..."):
 # --------------------------------
 def attack_banner(algorithm, threads):
     date = time.strftime("%Y-%m-%d %H:%M:%S")
-    print(f"\nStarting attack at {blue}{date}{end}")
+    print(f"\nStarting attack... {red}( https://github.com/ander-velc ){end} at {blue}{date}{end}")
     print(f"Algorithm: {blue}{algorithm}{end}")
     print(f"Threads: {blue}{threads}{end}\n")
 
