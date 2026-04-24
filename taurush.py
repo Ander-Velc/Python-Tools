@@ -122,7 +122,7 @@ def main():
     end_date = time.strftime("%Y-%m-%d %H:%M:%S")
 
     if not found:
-        print("\n{red}[-] No hashes cracked{end}")
+        print(f"\n{red}[-] No hashes cracked{end}")
 
     print(f"\nFinished at {blue}{end_date}{end}")
     print(f"Time elapsed: {blue}{fdate - sdate:.4f} seconds{end}")
