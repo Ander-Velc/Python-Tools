@@ -4,7 +4,7 @@
 
 ## Purpose
 
-I made this repo to upload python scripts that I made for practicing my programming skills, perhaps someone else is also learning and can help.
+I have created this repository to upload scripts in python that I have made to practice my programming skills, maybe someone else is also learning and can help.
 
 # taurush.py
 
