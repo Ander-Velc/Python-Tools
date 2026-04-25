@@ -44,7 +44,7 @@ def start_loader(text=f"Cracking..."):
             sys.stdout.write(f"\r{text} {next(spinner)}")
             sys.stdout.flush()
             time.sleep(0.1)
-        sys.stdout.write("\r")  # limpiar línea
+        sys.stdout.write("\r")
 
     thread = threading.Thread(target=loader)
     thread.daemon = True
@@ -111,7 +111,6 @@ def main():
                         print(f"\n\t{green}Hash cracked{end} --> {red}{hash_val}{end}:{green}{password}{end}")
                         found.add(hash_val)
 
-                        # Parada temprana
                         if len(found) == len(hashes):
                             break
     finally:
