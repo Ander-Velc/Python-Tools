@@ -6,6 +6,17 @@
 
 I have created this repository to upload scripts in python that I have made to practice my programming skills, maybe someone else is also learning and can help.
 
+# fileCheck
+
+A simple script that check the hash of a file and compares it with another one given, just to confirm integrity
+
+<img width="1564" height="625" alt="image" src="https://github.com/user-attachments/assets/298a44f4-1526-4772-9de3-1aec3625f6df" />
+
+## ⚙️ Requirements
+
+Python 3.8+
+
+
 # taurush.py
 
  I've tried to make a fast hash cracker tool, it supports most of the common hash algorithms and include threads. Be careful with RAM...
